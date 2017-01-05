@@ -577,29 +577,24 @@ span.downwardArrow {
 }
 
 .messageBody .tag-x {
-  border-left: 1px solid threedshadow;
-  margin-left: 1ex;
+  display: inline-block;
   cursor: pointer;
-  z-index: 3;
+  width: 1.8em;
+  text-align: center;
+  margin-right: -.9em;
+  border-radius: .9em;
+  margin-left: .5em;
+  background-color: rgba(255,255,255,0.3);
 }
 
 ul.tags li {
-  display: inline;
+  display: inline-block;
   font-size: 1.0rem;
-  font-weight: bold;
-  /*background-color: #68AB57;*/
-  padding: 1px 5px;
-  margin-right: 5px;
-  border-radius: 3px;
+  line-height: 1.8;
+  padding: 0 .9em;
+  margin-right: .4rem;
+  border-radius: .9em;
   color: #fff;
-}
-
-ul.tags li.light-tag {
-  color: rgb(10, 10, 10);
-}
-
-li.light-tag .tag-x {
-  border-color: rgb(10, 10, 10);
 }
 
 li.blc-FFFFFF {
@@ -611,7 +606,7 @@ ul.special-tags li {
 }
 
 ul.special-tags img {
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 
 .in-folder {
