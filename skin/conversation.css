@@ -66,7 +66,14 @@ p {
 }
 
 button {
-  -moz-appearance: button;
+  -moz-appearance: none;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+button:hover,
+button:focus {
+  background-color: -moz-buttonhoverface;
 }
 
 #conversationHeaderWrapper {
