@@ -389,10 +389,6 @@ button {
   font-weight: normal;
 }
 
-.message.collapsed .smallEmail {
-  display: none;
-}
-
 .authorInfoContainer {
   display: flex;
   justify-content: space-between;
@@ -520,11 +516,9 @@ span.downwardArrow {
 }
 
 .message.collapsed {
-  height: 3.6rem;
   border-radius: 5px;
   margin: 0 10px -6px 10px;
   border-bottom: none;
-  overflow: hidden;
 }
 
 .message.collapsed:last-child {
@@ -539,12 +533,16 @@ span.downwardArrow {
 .message.collapsed .dropDown,
 .message.collapsed .replyLinkWrapper,
 .message.collapsed .editDraftLinkWrapper,
-.message.collapsed .messageBody .tags,
+.message.collapsed .messageBody,
+.message.collapsed .messageFooter,
+.message.collapsed .quickReply,
+.message.collapsed .notificationBar,
+.message.collapsed .smallEmail,
 .message.collapsed p,
 .message.collapsed .attachments,
 .message.collapsed .detailsLine,
 .message:not(.collapsed) .snippet {
-  display: none;
+  display: none !important;
 }
 
 .snippet {
@@ -726,10 +724,6 @@ ul.special-tags img {
 
 .message .enigmailBar .enigmailDetails {
   float: right;
-}
-
-.message.collapsed .notificationBar {
-  display: none;
 }
 
 .detailsLine {
